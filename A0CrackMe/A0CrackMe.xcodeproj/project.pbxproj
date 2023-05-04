@@ -11,10 +11,11 @@
 		108652002A024CE4006C6B11 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 108651FF2A024CE4006C6B11 /* SceneDelegate.m */; };
 		108652032A024CE4006C6B11 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 108652022A024CE4006C6B11 /* ViewController.m */; };
 		108652062A024CE4006C6B11 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 108652042A024CE4006C6B11 /* Main.storyboard */; };
-		108652082A024CE4006C6B11 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 108652072A024CE4006C6B11 /* Assets.xcassets */; };
+		108652082A024CE4006C6B11 /* cute_girl_76x76.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 108652072A024CE4006C6B11 /* cute_girl_76x76.jpeg */; };
 		1086520B2A024CE4006C6B11 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 108652092A024CE4006C6B11 /* LaunchScreen.storyboard */; };
 		1086520E2A024CE4006C6B11 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1086520D2A024CE4006C6B11 /* main.m */; };
 		108652162A025C3A006C6B11 /* Md5ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 108652152A025C3A006C6B11 /* Md5ViewController.m */; };
+		108C8A002A04016B00CCC9EC /* UIButton+CrackTitle.m in Sources */ = {isa = PBXBuildFile; fileRef = 108C89FF2A04016B00CCC9EC /* UIButton+CrackTitle.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,12 +27,13 @@
 		108652012A024CE4006C6B11 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		108652022A024CE4006C6B11 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		108652052A024CE4006C6B11 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		108652072A024CE4006C6B11 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "/Users/andyhah/code/git-project/ios_crackme/A0CrackMe/A0CrackMe/Assets.xcassets"; sourceTree = "<absolute>"; };
+		108652072A024CE4006C6B11 /* cute_girl_76x76.jpeg */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; name = cute_girl_76x76.jpeg; path = "/Users/andyhah/code/git-project/ios_crackme/A0CrackMe/A0CrackMe/Assets.xcassets/AppIcon.appiconset/cute_girl_76x76.jpeg"; sourceTree = "<absolute>"; };
 		1086520A2A024CE4006C6B11 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1086520C2A024CE4006C6B11 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1086520D2A024CE4006C6B11 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		108652142A025C2D006C6B11 /* Md5ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Md5ViewController.h; sourceTree = "<group>"; };
 		108652152A025C3A006C6B11 /* Md5ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Md5ViewController.m; sourceTree = "<group>"; };
+		108C89FF2A04016B00CCC9EC /* UIButton+CrackTitle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+CrackTitle.m"; sourceTree = "<group>"; };
 		10FC66D22A03C00900CF0DED /* UIButton+CrackTitle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIButton+CrackTitle.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -72,13 +74,14 @@
 				108652012A024CE4006C6B11 /* ViewController.h */,
 				108652022A024CE4006C6B11 /* ViewController.m */,
 				108652042A024CE4006C6B11 /* Main.storyboard */,
-				108652072A024CE4006C6B11 /* Assets.xcassets */,
+				108652072A024CE4006C6B11 /* cute_girl_76x76.jpeg */,
 				108652092A024CE4006C6B11 /* LaunchScreen.storyboard */,
 				1086520C2A024CE4006C6B11 /* Info.plist */,
 				1086520D2A024CE4006C6B11 /* main.m */,
 				108652142A025C2D006C6B11 /* Md5ViewController.h */,
 				108652152A025C3A006C6B11 /* Md5ViewController.m */,
 				10FC66D22A03C00900CF0DED /* UIButton+CrackTitle.h */,
+				108C89FF2A04016B00CCC9EC /* UIButton+CrackTitle.m */,
 			);
 			path = A0CrackMe;
 			sourceTree = "<group>";
@@ -141,7 +144,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1086520B2A024CE4006C6B11 /* LaunchScreen.storyboard in Resources */,
-				108652082A024CE4006C6B11 /* Assets.xcassets in Resources */,
+				108652082A024CE4006C6B11 /* cute_girl_76x76.jpeg in Resources */,
 				108652062A024CE4006C6B11 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -158,6 +161,7 @@
 				1086520E2A024CE4006C6B11 /* main.m in Sources */,
 				108652162A025C3A006C6B11 /* Md5ViewController.m in Sources */,
 				108652002A024CE4006C6B11 /* SceneDelegate.m in Sources */,
+				108C8A002A04016B00CCC9EC /* UIButton+CrackTitle.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

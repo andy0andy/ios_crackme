@@ -10,8 +10,13 @@
 #ifndef UIButton_CrackTitle_h
 #define UIButton_CrackTitle_h
 
+/*
+ 给UIButton增加分类，以便点击事件传参
+ */
+
 @interface UIButton (CrackTitle)
 
+@property (strong, nonatomic) NSString* crackTit;
 
 @end
 
