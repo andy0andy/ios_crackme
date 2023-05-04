@@ -26,12 +26,13 @@
 		108652012A024CE4006C6B11 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		108652022A024CE4006C6B11 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		108652052A024CE4006C6B11 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		108652072A024CE4006C6B11 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "/Users/andyhah/code/ios-project/A0CrackMe/A0CrackMe/Assets.xcassets"; sourceTree = "<absolute>"; };
+		108652072A024CE4006C6B11 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "/Users/andyhah/code/git-project/ios_crackme/A0CrackMe/A0CrackMe/Assets.xcassets"; sourceTree = "<absolute>"; };
 		1086520A2A024CE4006C6B11 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1086520C2A024CE4006C6B11 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1086520D2A024CE4006C6B11 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		108652142A025C2D006C6B11 /* Md5ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Md5ViewController.h; sourceTree = "<group>"; };
 		108652152A025C3A006C6B11 /* Md5ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Md5ViewController.m; sourceTree = "<group>"; };
+		10FC66D22A03C00900CF0DED /* UIButton+CrackTitle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIButton+CrackTitle.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +78,7 @@
 				1086520D2A024CE4006C6B11 /* main.m */,
 				108652142A025C2D006C6B11 /* Md5ViewController.h */,
 				108652152A025C3A006C6B11 /* Md5ViewController.m */,
+				10FC66D22A03C00900CF0DED /* UIButton+CrackTitle.h */,
 			);
 			path = A0CrackMe;
 			sourceTree = "<group>";
@@ -294,8 +296,8 @@
 		108652122A024CE4006C6B11 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = V5K3KPU5HU;
@@ -322,8 +324,8 @@
 		108652132A024CE4006C6B11 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = V5K3KPU5HU;
