@@ -11,7 +11,7 @@
 		108652002A024CE4006C6B11 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 108651FF2A024CE4006C6B11 /* SceneDelegate.m */; };
 		108652032A024CE4006C6B11 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 108652022A024CE4006C6B11 /* ViewController.m */; };
 		108652062A024CE4006C6B11 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 108652042A024CE4006C6B11 /* Main.storyboard */; };
-		108652082A024CE4006C6B11 /* cute_girl_76x76.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 108652072A024CE4006C6B11 /* cute_girl_76x76.jpeg */; };
+		108652082A024CE4006C6B11 /* Contents.json in Resources */ = {isa = PBXBuildFile; fileRef = 108652072A024CE4006C6B11 /* Contents.json */; };
 		1086520B2A024CE4006C6B11 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 108652092A024CE4006C6B11 /* LaunchScreen.storyboard */; };
 		1086520E2A024CE4006C6B11 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1086520D2A024CE4006C6B11 /* main.m */; };
 		108652162A025C3A006C6B11 /* Md5ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 108652152A025C3A006C6B11 /* Md5ViewController.m */; };
@@ -27,7 +27,7 @@
 		108652012A024CE4006C6B11 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		108652022A024CE4006C6B11 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		108652052A024CE4006C6B11 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		108652072A024CE4006C6B11 /* cute_girl_76x76.jpeg */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; name = cute_girl_76x76.jpeg; path = "/Users/andyhah/code/git-project/ios_crackme/A0CrackMe/A0CrackMe/Assets.xcassets/AppIcon.appiconset/cute_girl_76x76.jpeg"; sourceTree = "<absolute>"; };
+		108652072A024CE4006C6B11 /* Contents.json */ = {isa = PBXFileReference; explicitFileType = sourcecode.asm; name = Contents.json; path = Assets.xcassets/AppIcon.appiconset/Contents.json; sourceTree = "<group>"; };
 		1086520A2A024CE4006C6B11 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1086520C2A024CE4006C6B11 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1086520D2A024CE4006C6B11 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -74,7 +74,7 @@
 				108652012A024CE4006C6B11 /* ViewController.h */,
 				108652022A024CE4006C6B11 /* ViewController.m */,
 				108652042A024CE4006C6B11 /* Main.storyboard */,
-				108652072A024CE4006C6B11 /* cute_girl_76x76.jpeg */,
+				108652072A024CE4006C6B11 /* Contents.json */,
 				108652092A024CE4006C6B11 /* LaunchScreen.storyboard */,
 				1086520C2A024CE4006C6B11 /* Info.plist */,
 				1086520D2A024CE4006C6B11 /* main.m */,
@@ -144,7 +144,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1086520B2A024CE4006C6B11 /* LaunchScreen.storyboard in Resources */,
-				108652082A024CE4006C6B11 /* cute_girl_76x76.jpeg in Resources */,
+				108652082A024CE4006C6B11 /* Contents.json in Resources */,
 				108652062A024CE4006C6B11 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
