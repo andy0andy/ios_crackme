@@ -11,11 +11,11 @@
 		108652002A024CE4006C6B11 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 108651FF2A024CE4006C6B11 /* SceneDelegate.m */; };
 		108652032A024CE4006C6B11 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 108652022A024CE4006C6B11 /* ViewController.m */; };
 		108652062A024CE4006C6B11 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 108652042A024CE4006C6B11 /* Main.storyboard */; };
-		108652082A024CE4006C6B11 /* Contents.json in Resources */ = {isa = PBXBuildFile; fileRef = 108652072A024CE4006C6B11 /* Contents.json */; };
 		1086520B2A024CE4006C6B11 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 108652092A024CE4006C6B11 /* LaunchScreen.storyboard */; };
 		1086520E2A024CE4006C6B11 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1086520D2A024CE4006C6B11 /* main.m */; };
 		108652162A025C3A006C6B11 /* Md5ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 108652152A025C3A006C6B11 /* Md5ViewController.m */; };
 		108C8A002A04016B00CCC9EC /* UIButton+CrackTitle.m in Sources */ = {isa = PBXBuildFile; fileRef = 108C89FF2A04016B00CCC9EC /* UIButton+CrackTitle.m */; };
+		10A08AEE2A04F82600EFA5AD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10A08AED2A04F82600EFA5AD /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,13 +27,13 @@
 		108652012A024CE4006C6B11 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		108652022A024CE4006C6B11 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		108652052A024CE4006C6B11 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		108652072A024CE4006C6B11 /* Contents.json */ = {isa = PBXFileReference; explicitFileType = sourcecode.asm; name = Contents.json; path = Assets.xcassets/AppIcon.appiconset/Contents.json; sourceTree = "<group>"; };
 		1086520A2A024CE4006C6B11 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1086520C2A024CE4006C6B11 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1086520D2A024CE4006C6B11 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		108652142A025C2D006C6B11 /* Md5ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Md5ViewController.h; sourceTree = "<group>"; };
 		108652152A025C3A006C6B11 /* Md5ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Md5ViewController.m; sourceTree = "<group>"; };
 		108C89FF2A04016B00CCC9EC /* UIButton+CrackTitle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+CrackTitle.m"; sourceTree = "<group>"; };
+		10A08AED2A04F82600EFA5AD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		10FC66D22A03C00900CF0DED /* UIButton+CrackTitle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIButton+CrackTitle.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -67,6 +67,7 @@
 		108651FA2A024CE4006C6B11 /* A0CrackMe */ = {
 			isa = PBXGroup;
 			children = (
+				10A08AED2A04F82600EFA5AD /* Assets.xcassets */,
 				108651FB2A024CE4006C6B11 /* AppDelegate.h */,
 				108651FC2A024CE4006C6B11 /* AppDelegate.m */,
 				108651FE2A024CE4006C6B11 /* SceneDelegate.h */,
@@ -74,7 +75,6 @@
 				108652012A024CE4006C6B11 /* ViewController.h */,
 				108652022A024CE4006C6B11 /* ViewController.m */,
 				108652042A024CE4006C6B11 /* Main.storyboard */,
-				108652072A024CE4006C6B11 /* Contents.json */,
 				108652092A024CE4006C6B11 /* LaunchScreen.storyboard */,
 				1086520C2A024CE4006C6B11 /* Info.plist */,
 				1086520D2A024CE4006C6B11 /* main.m */,
@@ -144,7 +144,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1086520B2A024CE4006C6B11 /* LaunchScreen.storyboard in Resources */,
-				108652082A024CE4006C6B11 /* Contents.json in Resources */,
+				10A08AEE2A04F82600EFA5AD /* Assets.xcassets in Resources */,
 				108652062A024CE4006C6B11 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -237,7 +237,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -289,7 +289,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -300,6 +300,7 @@
 		108652122A024CE4006C6B11 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -321,13 +322,14 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.andyhah.A0CrackMe;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		108652132A024CE4006C6B11 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -349,7 +351,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.andyhah.A0CrackMe;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

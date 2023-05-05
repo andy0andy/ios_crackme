@@ -76,7 +76,7 @@
     
     const char *cStr = [txt UTF8String];
     unsigned char digest[16];
-    CC_MD5(cStr, strlen(cStr), digest);
+    CC_MD5(cStr, (CC_LONG)strlen(cStr), digest);
     
     NSMutableString *output = [NSMutableString stringWithCapacity:CC_MD5_DIGEST_LENGTH * 2];
     
