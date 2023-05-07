@@ -10,8 +10,9 @@
 #define SCREENHEIGHT      [UIScreen mainScreen].bounds.size.height
 
 #import "ViewController.h"
-#import "Md5ViewController.h"
-#import "UIButton+CrackTitle.h"
+#import "A0Classes/Md5ViewController.h"
+#import "A0Classes/UIButton+CrackTitle.h"
+#import "A0Classes/CrackArrayDefaults.h"
 
 @interface ViewController ()
 
@@ -30,7 +31,7 @@
     UIColor *notPassColor = [UIColor colorWithRed:240/255.0 green:248/255.0 blue:255/255.0 alpha:1];
     
     // crack 数组，遍历展示
-    NSMutableArray* crackArr = [self crackArray];
+    NSMutableArray* crackArr = [[CrackArrayDefaults alloc] crackArray];
     
     for (NSInteger i=0; i < crackArr.count; i++){
         NSDictionary* arrDict = crackArr[i];
@@ -70,32 +71,6 @@
     [self.navigationController pushViewController:vcMap[btn.crackTit] animated:YES];
 }
 
-- (NSMutableArray*)crackArray{
-    /*
-     return all button list
-     NSUserDefaults, 有就取出，无则初始化传入
-     */
-    
-    // 同 vcMap 数组元素
-    NSMutableArray* arr = [[NSMutableArray alloc] initWithCapacity:0];
 
-    // md5
-    NSDictionary* md5Dict = @{
-        @"is_pass": @false,
-        @"title": @"MD5",  // 对应 vcMap的key
-        @"desc": @"md5字符串检测",
-    };
-    [arr addObject:md5Dict];
-    
-    // 测试 md5
-    NSDictionary* _md5Dict = @{
-        @"is_pass": @true,
-        @"title": @"MD5",  // 对应 vcMap的key
-        @"desc": @"测试 md5字符串检测",
-    };
-    [arr addObject:_md5Dict];
-    
-    return arr;
-}
 
 @end

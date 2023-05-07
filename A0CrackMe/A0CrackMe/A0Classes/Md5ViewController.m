@@ -8,10 +8,12 @@
 //设备的宽高
 #define SCREENWIDTH [UIScreen mainScreen].bounds.size.width
 #define KEY @"andyhah"
+#define TITLE @"MD5"
 
 #import <Foundation/Foundation.h>
-#import "Md5ViewController.h"
 #import <CommonCrypto/CommonDigest.h>
+#import "Md5ViewController.h"
+#import "CrackArrayDefaults.h"
 
 @interface Md5ViewController ()
 
@@ -53,9 +55,13 @@
     NSString* secret = [self md5Encrypt:KEY];
     
     NSString* ipt_txt = self.input.text;
-    NSLog(@"输入框字符串>> %@", ipt_txt);
+
     
     if (ipt_txt == secret){
+
+        // 改变值
+        [[CrackArrayDefaults alloc] modifyCrackIsPass:nil title:TITLE is_pass:true];
+        
         UIAlertController* alert = [UIAlertController alertControllerWithTitle:@"通知" message:@"输入正确^.^" preferredStyle:UIAlertControllerStyleAlert];
         UIAlertAction* defaultAction = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:^(UIAlertAction* action){}];
         
@@ -84,7 +90,7 @@
         [output appendFormat:@"%02x", digest[i]];
     }
     
-    NSLog(@"md5>> %@ -> %@", txt, output);
+    NSLog(@"[md5]>> %@ -> %@", txt, output);
     return output;
 }
 

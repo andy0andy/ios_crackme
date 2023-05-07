@@ -35,8 +35,6 @@
     navCrack.tabBarItem.image = [UIImage imageNamed:@"mid_finger_joker"]; 
     
     
-    
-    
     // 添加子控制器
     [tabBar addChildViewController:navCrack];
     

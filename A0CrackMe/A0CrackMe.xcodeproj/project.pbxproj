@@ -16,6 +16,7 @@
 		108652162A025C3A006C6B11 /* Md5ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 108652152A025C3A006C6B11 /* Md5ViewController.m */; };
 		108C8A002A04016B00CCC9EC /* UIButton+CrackTitle.m in Sources */ = {isa = PBXBuildFile; fileRef = 108C89FF2A04016B00CCC9EC /* UIButton+CrackTitle.m */; };
 		10A08AEE2A04F82600EFA5AD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10A08AED2A04F82600EFA5AD /* Assets.xcassets */; };
+		10E30E962A077D6A00915BFC /* CrackArrayDefaults.m in Sources */ = {isa = PBXBuildFile; fileRef = 10E30E952A077D6A00915BFC /* CrackArrayDefaults.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,8 @@
 		108652152A025C3A006C6B11 /* Md5ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Md5ViewController.m; sourceTree = "<group>"; };
 		108C89FF2A04016B00CCC9EC /* UIButton+CrackTitle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+CrackTitle.m"; sourceTree = "<group>"; };
 		10A08AED2A04F82600EFA5AD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		10E30E942A077D2500915BFC /* CrackArrayDefaults.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CrackArrayDefaults.h; sourceTree = "<group>"; };
+		10E30E952A077D6A00915BFC /* CrackArrayDefaults.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CrackArrayDefaults.m; sourceTree = "<group>"; };
 		10FC66D22A03C00900CF0DED /* UIButton+CrackTitle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIButton+CrackTitle.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -67,6 +70,7 @@
 		108651FA2A024CE4006C6B11 /* A0CrackMe */ = {
 			isa = PBXGroup;
 			children = (
+				10E30E932A077C5A00915BFC /* A0Classes */,
 				10A08AED2A04F82600EFA5AD /* Assets.xcassets */,
 				108651FB2A024CE4006C6B11 /* AppDelegate.h */,
 				108651FC2A024CE4006C6B11 /* AppDelegate.m */,
@@ -78,12 +82,21 @@
 				108652092A024CE4006C6B11 /* LaunchScreen.storyboard */,
 				1086520C2A024CE4006C6B11 /* Info.plist */,
 				1086520D2A024CE4006C6B11 /* main.m */,
-				108652142A025C2D006C6B11 /* Md5ViewController.h */,
-				108652152A025C3A006C6B11 /* Md5ViewController.m */,
-				10FC66D22A03C00900CF0DED /* UIButton+CrackTitle.h */,
-				108C89FF2A04016B00CCC9EC /* UIButton+CrackTitle.m */,
 			);
 			path = A0CrackMe;
+			sourceTree = "<group>";
+		};
+		10E30E932A077C5A00915BFC /* A0Classes */ = {
+			isa = PBXGroup;
+			children = (
+				108C89FF2A04016B00CCC9EC /* UIButton+CrackTitle.m */,
+				10FC66D22A03C00900CF0DED /* UIButton+CrackTitle.h */,
+				108652142A025C2D006C6B11 /* Md5ViewController.h */,
+				108652152A025C3A006C6B11 /* Md5ViewController.m */,
+				10E30E942A077D2500915BFC /* CrackArrayDefaults.h */,
+				10E30E952A077D6A00915BFC /* CrackArrayDefaults.m */,
+			);
+			path = A0Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -159,6 +172,7 @@
 				108652032A024CE4006C6B11 /* ViewController.m in Sources */,
 				108651FD2A024CE4006C6B11 /* AppDelegate.m in Sources */,
 				1086520E2A024CE4006C6B11 /* main.m in Sources */,
+				10E30E962A077D6A00915BFC /* CrackArrayDefaults.m in Sources */,
 				108652162A025C3A006C6B11 /* Md5ViewController.m in Sources */,
 				108652002A024CE4006C6B11 /* SceneDelegate.m in Sources */,
 				108C8A002A04016B00CCC9EC /* UIButton+CrackTitle.m in Sources */,
