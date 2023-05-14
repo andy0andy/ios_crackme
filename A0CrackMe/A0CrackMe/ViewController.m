@@ -47,7 +47,7 @@
         [btn.layer setBorderWidth:1.0]; // 设置边框的粗细
 
         btn.crackTit = arrDict[@"title"];  // 传入title，以便查询跳转指定view
-        [btn addTarget:self action:@selector(jumpAction:) forControlEvents:UIControlEventTouchUpInside]; // 跳转md5视图
+        [btn addTarget:self action:@selector(jumpAction:) forControlEvents:UIControlEventTouchUpInside]; // 跳转视图
         self.navigationItem.hidesBackButton=NO;
 
         [self.view addSubview:btn];

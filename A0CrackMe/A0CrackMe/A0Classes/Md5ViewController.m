@@ -55,9 +55,10 @@
     NSString* secret = [self md5Encrypt:KEY];
     
     NSString* ipt_txt = self.input.text;
+    ipt_txt = [ipt_txt stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
 
     
-    if (ipt_txt == secret){
+    if ([ipt_txt isEqualToString:secret]){
 
         // 改变值
         [[CrackArrayDefaults alloc] modifyCrackIsPass:nil title:TITLE is_pass:true];
