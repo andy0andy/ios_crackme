@@ -20,11 +20,11 @@
 
 @implementation ViewController
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    // Do any additional setup after loading the view.
+- (void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    // view will happen
+    
     self.view.backgroundColor = [UIColor whiteColor];
-
     
     // 颜色
     UIColor *passColor= [UIColor colorWithRed:144/255.0 green:238/255.0 blue:144/255.0 alpha:1];
@@ -53,6 +53,12 @@
         [self.view addSubview:btn];
     };
     
+    
+}
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    // Do any additional setup after loading the view.
     
 }
 
