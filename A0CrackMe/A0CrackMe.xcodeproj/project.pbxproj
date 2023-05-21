@@ -17,6 +17,11 @@
 		108C8A002A04016B00CCC9EC /* UIButton+CrackTitle.m in Sources */ = {isa = PBXBuildFile; fileRef = 108C89FF2A04016B00CCC9EC /* UIButton+CrackTitle.m */; };
 		10A08AEE2A04F82600EFA5AD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10A08AED2A04F82600EFA5AD /* Assets.xcassets */; };
 		10E30E962A077D6A00915BFC /* CrackArrayDefaults.m in Sources */ = {isa = PBXBuildFile; fileRef = 10E30E952A077D6A00915BFC /* CrackArrayDefaults.m */; };
+		10F7C7FD2A19CB1E0037E15E /* CheekStatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 10F7C7FC2A19CB1E0037E15E /* CheekStatViewController.m */; };
+		10F7C8022A19F0E60037E15E /* Tools.m in Sources */ = {isa = PBXBuildFile; fileRef = 10F7C8012A19F0E60037E15E /* Tools.m */; };
+		10F7C8052A19F8230037E15E /* JailBreakCheek.m in Sources */ = {isa = PBXBuildFile; fileRef = 10F7C8042A19F8230037E15E /* JailBreakCheek.m */; };
+		10F7C8082A1A01D60037E15E /* CheekIphoneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 10F7C8072A1A01D60037E15E /* CheekIphoneViewController.m */; };
+		10F7C80B2A1A0EAD0037E15E /* CheekDylibViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 10F7C80A2A1A0EAD0037E15E /* CheekDylibViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +42,16 @@
 		10A08AED2A04F82600EFA5AD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		10E30E942A077D2500915BFC /* CrackArrayDefaults.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CrackArrayDefaults.h; sourceTree = "<group>"; };
 		10E30E952A077D6A00915BFC /* CrackArrayDefaults.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CrackArrayDefaults.m; sourceTree = "<group>"; };
+		10F7C7FB2A19CB070037E15E /* CheekStatViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CheekStatViewController.h; sourceTree = "<group>"; };
+		10F7C7FC2A19CB1E0037E15E /* CheekStatViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CheekStatViewController.m; sourceTree = "<group>"; };
+		10F7C8002A19F0BF0037E15E /* Tools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Tools.h; sourceTree = "<group>"; };
+		10F7C8012A19F0E60037E15E /* Tools.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tools.m; sourceTree = "<group>"; };
+		10F7C8032A19F8130037E15E /* JailBreakCheek.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JailBreakCheek.h; sourceTree = "<group>"; };
+		10F7C8042A19F8230037E15E /* JailBreakCheek.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JailBreakCheek.m; sourceTree = "<group>"; };
+		10F7C8062A1A019B0037E15E /* CheekIphoneViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CheekIphoneViewController.h; sourceTree = "<group>"; };
+		10F7C8072A1A01D60037E15E /* CheekIphoneViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CheekIphoneViewController.m; sourceTree = "<group>"; };
+		10F7C8092A1A0EA00037E15E /* CheekDylibViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CheekDylibViewController.h; sourceTree = "<group>"; };
+		10F7C80A2A1A0EAD0037E15E /* CheekDylibViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CheekDylibViewController.m; sourceTree = "<group>"; };
 		10FC66D22A03C00900CF0DED /* UIButton+CrackTitle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIButton+CrackTitle.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -89,14 +104,32 @@
 		10E30E932A077C5A00915BFC /* A0Classes */ = {
 			isa = PBXGroup;
 			children = (
+				10F7C7F92A19CAC60037E15E /* JailBreakCheek */,
 				108C89FF2A04016B00CCC9EC /* UIButton+CrackTitle.m */,
 				10FC66D22A03C00900CF0DED /* UIButton+CrackTitle.h */,
 				108652142A025C2D006C6B11 /* Md5ViewController.h */,
 				108652152A025C3A006C6B11 /* Md5ViewController.m */,
 				10E30E942A077D2500915BFC /* CrackArrayDefaults.h */,
 				10E30E952A077D6A00915BFC /* CrackArrayDefaults.m */,
+				10F7C8002A19F0BF0037E15E /* Tools.h */,
+				10F7C8012A19F0E60037E15E /* Tools.m */,
 			);
 			path = A0Classes;
+			sourceTree = "<group>";
+		};
+		10F7C7F92A19CAC60037E15E /* JailBreakCheek */ = {
+			isa = PBXGroup;
+			children = (
+				10F7C7FB2A19CB070037E15E /* CheekStatViewController.h */,
+				10F7C7FC2A19CB1E0037E15E /* CheekStatViewController.m */,
+				10F7C8032A19F8130037E15E /* JailBreakCheek.h */,
+				10F7C8042A19F8230037E15E /* JailBreakCheek.m */,
+				10F7C8062A1A019B0037E15E /* CheekIphoneViewController.h */,
+				10F7C8072A1A01D60037E15E /* CheekIphoneViewController.m */,
+				10F7C8092A1A0EA00037E15E /* CheekDylibViewController.h */,
+				10F7C80A2A1A0EAD0037E15E /* CheekDylibViewController.m */,
+			);
+			name = JailBreakCheek;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -169,11 +202,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				10F7C80B2A1A0EAD0037E15E /* CheekDylibViewController.m in Sources */,
 				108652032A024CE4006C6B11 /* ViewController.m in Sources */,
 				108651FD2A024CE4006C6B11 /* AppDelegate.m in Sources */,
+				10F7C7FD2A19CB1E0037E15E /* CheekStatViewController.m in Sources */,
+				10F7C8022A19F0E60037E15E /* Tools.m in Sources */,
+				10F7C8052A19F8230037E15E /* JailBreakCheek.m in Sources */,
 				1086520E2A024CE4006C6B11 /* main.m in Sources */,
 				10E30E962A077D6A00915BFC /* CrackArrayDefaults.m in Sources */,
 				108652162A025C3A006C6B11 /* Md5ViewController.m in Sources */,
+				10F7C8082A1A01D60037E15E /* CheekIphoneViewController.m in Sources */,
 				108652002A024CE4006C6B11 /* SceneDelegate.m in Sources */,
 				108C8A002A04016B00CCC9EC /* UIButton+CrackTitle.m in Sources */,
 			);
@@ -306,6 +344,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -320,6 +359,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = V5K3KPU5HU;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = A0CrackMe/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -349,6 +389,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = V5K3KPU5HU;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = A0CrackMe/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;

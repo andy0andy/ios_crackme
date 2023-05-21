@@ -11,7 +11,7 @@
 @interface CrackArrayDefaults : NSObject
 
 - (NSMutableArray*)crackArray;
-- (void) modifyCrackIsPass:(NSString*)defaultsName title:(NSString*)title is_pass:(BOOL)is_pass;
+- (void) modifyCrackIsPass:(NSString*)defaultsName flag:(NSString*)flag is_pass:(BOOL)is_pass;
 
 @end
 

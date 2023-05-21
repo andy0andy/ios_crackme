@@ -13,6 +13,9 @@
 #import "A0Classes/Md5ViewController.h"
 #import "A0Classes/UIButton+CrackTitle.h"
 #import "A0Classes/CrackArrayDefaults.h"
+#import "A0Classes/CheekStatViewController.h"
+#import "A0Classes/CheekIphoneViewController.h"
+#import "A0Classes/CheekDylibViewController.h"
 
 @interface ViewController ()
 
@@ -46,7 +49,7 @@
         [btn.layer setCornerRadius:12];  // 设置圆角的半径
         [btn.layer setBorderWidth:1.0]; // 设置边框的粗细
 
-        btn.crackTit = arrDict[@"title"];  // 传入title，以便查询跳转指定view
+        btn.crackTit = arrDict[@"flag"];  // 传入flag，以便查询跳转指定view
         [btn addTarget:self action:@selector(jumpAction:) forControlEvents:UIControlEventTouchUpInside]; // 跳转视图
         self.navigationItem.hidesBackButton=NO;
 
@@ -70,7 +73,10 @@
     // title: view; map
     // 同 arr 增加键值对
     NSDictionary* vcMap = @{
-        @"MD5": [[Md5ViewController alloc] init],
+        @"md5String": [[Md5ViewController alloc] init],
+        @"jailBreakCheekStat": [[CheekStatViewController alloc] init],
+        @"jailBreakCheekIphone": [[CheekIphoneViewController alloc] init],
+        @"jailBreakCheekDylib": [[CheekDylibViewController alloc] init],
     };
     
     //pushViewController调用
