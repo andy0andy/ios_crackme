@@ -45,7 +45,7 @@
 
 - (void)check{
     
-    Boolean result = [JailBreakCheek isDylib];
+    Boolean result = [JailBreakCheek isDebugged];
     if (!result){
         // 改变值
         [[CrackArrayDefaults alloc] modifyCrackIsPass:nil flag:FLAG is_pass:true];

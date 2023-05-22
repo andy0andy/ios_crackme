@@ -13,6 +13,14 @@
 + (Boolean) isPhone;
 + (Boolean)isStatPath;
 + (Boolean)isDylib;
++ (Boolean)isOpenJailApp;
++ (Boolean)isOpenJailFile;
++ (Boolean)isWritePrivatePath;
++ (Boolean)isLstatAtLnk;
++ (Boolean)isForkSub;
++ (Boolean)isExcepClass;
++ (Boolean)isCheekEnv;
++ (Boolean)isDebugged;
 
 @end
 
