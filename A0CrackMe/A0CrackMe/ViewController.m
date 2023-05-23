@@ -9,6 +9,8 @@
 #define SCREENWIDTH       [UIScreen mainScreen].bounds.size.width
 #define SCREENHEIGHT      [UIScreen mainScreen].bounds.size.height
 
+#import <UIKit/UIKit.h>
+
 #import "ViewController.h"
 #import "A0Classes/Md5ViewController.h"
 #import "A0Classes/UIButton+CrackTitle.h"
@@ -18,6 +20,8 @@
 #import "A0Classes/CheekDylibViewController.h"
 
 @interface ViewController ()
+
+@property (retain, nonatomic) UIScrollView* scrollView;
 
 @end
 
@@ -29,6 +33,20 @@
     
     self.view.backgroundColor = [UIColor whiteColor];
     
+    // 创建UIScrollView
+    _scrollView = [[UIScrollView alloc] init];
+    _scrollView.frame = CGRectMake(0, 0, SCREENWIDTH, SCREENHEIGHT);
+    // 设置画布大小，一般比frame大
+    _scrollView.contentSize = CGSizeMake(SCREENWIDTH, SCREENHEIGHT);
+    // 设置内边距
+    _scrollView.contentInset = UIEdgeInsetsMake(0, 0, 65, 0);
+    
+    _scrollView.bounces = NO;
+    
+    [self.view addSubview:_scrollView];
+    
+    
+    
     // 颜色
     UIColor *passColor= [UIColor colorWithRed:144/255.0 green:238/255.0 blue:144/255.0 alpha:1];
     UIColor *notPassColor = [UIColor colorWithRed:240/255.0 green:248/255.0 blue:255/255.0 alpha:1];
@@ -39,7 +57,7 @@
     for (NSInteger i=0; i < crackArr.count; i++){
         NSDictionary* arrDict = crackArr[i];
         
-        UIButton* btn = [[UIButton alloc] initWithFrame:CGRectMake(0, 65+i*80, SCREENWIDTH, 80)];
+        UIButton* btn = [[UIButton alloc] initWithFrame:CGRectMake(0, i*80, SCREENWIDTH, 80)];
         btn.backgroundColor = [arrDict[@"is_pass"] isEqual:@true] ? passColor : notPassColor; // 按钮颜色
         btn.titleLabel.font = [UIFont systemFontOfSize:18.0]; // 字体大小
         [btn setTitleColor:[UIColor blackColor]forState:UIControlStateNormal]; // 字体颜色
@@ -53,7 +71,8 @@
         [btn addTarget:self action:@selector(jumpAction:) forControlEvents:UIControlEventTouchUpInside]; // 跳转视图
         self.navigationItem.hidesBackButton=NO;
 
-        [self.view addSubview:btn];
+//        [self.view addSubview:btn];
+        [_scrollView addSubview:btn];
     };
     
     
@@ -77,6 +96,15 @@
         @"jailBreakCheekStat": [[CheekStatViewController alloc] init],
         @"jailBreakCheekIphone": [[CheekIphoneViewController alloc] init],
         @"jailBreakCheekDylib": [[CheekDylibViewController alloc] init],
+        
+        @"jailBreakCheekOpenJailApp": [[CheekDylibViewController alloc] init],
+        @"jailBreakCheekOpenJailFile": [[CheekDylibViewController alloc] init],
+        @"jailBreakCheekWritePrivatePath": [[CheekDylibViewController alloc] init],
+        @"jailBreakCheekLstatAtLnk": [[CheekDylibViewController alloc] init],
+        @"jailBreakCheekForkSub": [[CheekDylibViewController alloc] init],
+        @"jailBreakCheekExceptClass": [[CheekDylibViewController alloc] init],
+        @"jailBreakCheekCheekEnv": [[CheekDylibViewController alloc] init],
+        @"jailBreakCheekDebugged": [[CheekDylibViewController alloc] init],
     };
     
     //pushViewController调用

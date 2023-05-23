@@ -27,16 +27,17 @@
     self.window.rootViewController = tabBar;
     
     // a 创建子控制器，题目
-    ViewController *vcCrack=[[ViewController alloc] init];
+    ViewController *vcCrack = [[ViewController alloc] init];
 
     UINavigationController *navCrack = [[UINavigationController alloc] initWithRootViewController:vcCrack];
     navCrack.view.backgroundColor=[UIColor grayColor];
     navCrack.tabBarItem.title = @"CrackMe";
-    navCrack.tabBarItem.image = [UIImage imageNamed:@"mid_finger_joker"]; 
-    
+    navCrack.tabBarItem.image = [UIImage imageNamed:@"mid_finger_joker"];
     
     // 添加子控制器
     [tabBar addChildViewController:navCrack];
+    
+    
     
     // 显示window窗口
     [self.window makeKeyAndVisible];

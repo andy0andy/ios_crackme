@@ -18,7 +18,7 @@
 + (Boolean)isWritePrivatePath;
 + (Boolean)isLstatAtLnk;
 + (Boolean)isForkSub;
-+ (Boolean)isExcepClass;
++ (Boolean)isExceptClass;
 + (Boolean)isCheekEnv;
 + (Boolean)isDebugged;
 

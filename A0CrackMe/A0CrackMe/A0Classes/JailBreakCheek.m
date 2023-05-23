@@ -246,7 +246,7 @@
     return result;
 }
 
-+ (Boolean)isExcepClass{
++ (Boolean)isExceptClass{
     // 检测是否有异常类
     
     Boolean result = FALSE;

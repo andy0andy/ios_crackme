@@ -67,6 +67,79 @@
         };
         [arr addObject:jailBreakCheekDylib];
         
+        // 越狱检测 检测能否启动越狱app
+        NSDictionary* jailBreakCheekOpenJailApp = @{
+            @"is_pass": @false,
+            @"title": @"Open jailbreak app?",
+            @"desc": @"越狱检测：检测能否启动越狱app。",
+            @"flag": @"jailBreakCheekOpenJailApp", // 对应 vcMap的key
+        };
+        [arr addObject:jailBreakCheekOpenJailApp];
+        
+        // 越狱检测 检测能否启动越狱file
+        NSDictionary* jailBreakCheekOpenJailFile = @{
+            @"is_pass": @false,
+            @"title": @"Open jailbreak file?",
+            @"desc": @"越狱检测：检测能否启动越狱file。",
+            @"flag": @"jailBreakCheekOpenJailFile", // 对应 vcMap的key
+        };
+        [arr addObject:jailBreakCheekOpenJailFile];
+        
+        // 越狱检测 检测能否写入私有路径
+        NSDictionary* jailBreakCheekWritePrivatePath = @{
+            @"is_pass": @false,
+            @"title": @"Private path is writeable?",
+            @"desc": @"越狱检测：检测能否写入私有路径。",
+            @"flag": @"jailBreakCheekWritePrivatePath", // 对应 vcMap的key
+        };
+        [arr addObject:jailBreakCheekWritePrivatePath];
+        
+        
+        // 越狱检测 检测文件路径是否存在，是否是路径链接
+        NSDictionary* jailBreakCheekLstatAtLnk = @{
+            @"is_pass": @false,
+            @"title": @"Path is link?",
+            @"desc": @"越狱检测：检测文件路径是否真实存在。",
+            @"flag": @"jailBreakCheekLstatAtLnk", // 对应 vcMap的key
+        };
+        [arr addObject:jailBreakCheekLstatAtLnk];
+        
+        // 越狱检测 能否fork子进程
+        NSDictionary* jailBreakCheekForkSub = @{
+            @"is_pass": @false,
+            @"title": @"Can you fork sub process?",
+            @"desc": @"越狱检测：能否fork子进程。",
+            @"flag": @"jailBreakCheekForkSub", // 对应 vcMap的key
+        };
+        [arr addObject:jailBreakCheekForkSub];
+        
+        // 越狱检测 检测是否有异常类
+        NSDictionary* jailBreakCheekExceptClass = @{
+            @"is_pass": @false,
+            @"title": @"Cheek except class.",
+            @"desc": @"越狱检测：检测是否有异常类。",
+            @"flag": @"jailBreakCheekExceptClass", // 对应 vcMap的key
+        };
+        [arr addObject:jailBreakCheekExceptClass];
+        
+        // 越狱检测 查看是否有环境变量
+        NSDictionary* jailBreakCheekCheekEnv = @{
+            @"is_pass": @false,
+            @"title": @"env var?",
+            @"desc": @"越狱检测：查看是否有环境变量。",
+            @"flag": @"jailBreakCheekCheekEnv", // 对应 vcMap的key
+        };
+        [arr addObject:jailBreakCheekCheekEnv];
+        
+        // 越狱检测 当前进程是否是debug模式
+        NSDictionary* jailBreakCheekDebugged = @{
+            @"is_pass": @false,
+            @"title": @"Current process is debugger?",
+            @"desc": @"越狱检测：当前进程是否是debug模式。",
+            @"flag": @"jailBreakCheekDebugged", // 对应 vcMap的key
+        };
+        [arr addObject:jailBreakCheekDebugged];
+        
         
         // 保存进NSUserDefaults
         [defaults setObject:arr forKey:defaultsName];
