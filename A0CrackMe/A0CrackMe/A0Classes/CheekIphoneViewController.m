@@ -46,11 +46,11 @@
 - (void)check{
     
     Boolean result = [JailBreakCheek isPhone];
-    if (result){
+    if (!result){
         // 改变值
         [[CrackArrayDefaults alloc] modifyCrackIsPass:nil flag:FLAG is_pass:true];
     }
-    [Tools printTipAtResult:result View:self];
+    [Tools printTipAtResult:!result View:self];
     
     
 }

@@ -19,6 +19,15 @@
 #import "A0Classes/CheekIphoneViewController.h"
 #import "A0Classes/CheekDylibViewController.h"
 
+#import "A0Classes/CheekOpenJailAppViewController.h"
+#import "A0Classes/CheekOpenJailFileViewController.h"
+#import "A0Classes/CheekWritePrivatePathViewController.h"
+#import "A0Classes/CheekLstatAtLnkViewController.h"
+#import "A0Classes/CheekForkSubViewController.h"
+#import "A0Classes/CheekExceptClassViewController.h"
+#import "A0Classes/CheekCheekEnvViewController.h"
+#import "A0Classes/CheekDebuggedViewController.h"
+
 @interface ViewController ()
 
 @property (retain, nonatomic) UIScrollView* scrollView;
@@ -37,15 +46,13 @@
     _scrollView = [[UIScrollView alloc] init];
     _scrollView.frame = CGRectMake(0, 0, SCREENWIDTH, SCREENHEIGHT);
     // 设置画布大小，一般比frame大
-    _scrollView.contentSize = CGSizeMake(SCREENWIDTH, SCREENHEIGHT);
-    // 设置内边距
+    _scrollView.contentSize = CGSizeMake(SCREENWIDTH, SCREENHEIGHT*2);
+    // 设置内边距 ? 回退导致滚动时图扩大
     _scrollView.contentInset = UIEdgeInsetsMake(0, 0, 65, 0);
     
     _scrollView.bounces = NO;
     
     [self.view addSubview:_scrollView];
-    
-    
     
     // 颜色
     UIColor *passColor= [UIColor colorWithRed:144/255.0 green:238/255.0 blue:144/255.0 alpha:1];
@@ -63,7 +70,7 @@
         [btn setTitleColor:[UIColor blackColor]forState:UIControlStateNormal]; // 字体颜色
         btn.contentHorizontalAlignment = UIControlContentHorizontalAlignmentLeft; // 文字水平居左
         btn.contentEdgeInsets = UIEdgeInsetsMake(0, 10, 0, 0);
-        [btn setTitle:arrDict[@"desc"] forState:UIControlStateNormal];
+        [btn setTitle:[NSString stringWithFormat:@"%ld. %@",i+1,arrDict[@"desc"]] forState:UIControlStateNormal];
         [btn.layer setCornerRadius:12];  // 设置圆角的半径
         [btn.layer setBorderWidth:1.0]; // 设置边框的粗细
 
@@ -71,17 +78,15 @@
         [btn addTarget:self action:@selector(jumpAction:) forControlEvents:UIControlEventTouchUpInside]; // 跳转视图
         self.navigationItem.hidesBackButton=NO;
 
-//        [self.view addSubview:btn];
         [_scrollView addSubview:btn];
     };
-    
     
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    
+
 }
 
 - (void)jumpAction:(UIButton*)btn{
@@ -97,14 +102,14 @@
         @"jailBreakCheekIphone": [[CheekIphoneViewController alloc] init],
         @"jailBreakCheekDylib": [[CheekDylibViewController alloc] init],
         
-        @"jailBreakCheekOpenJailApp": [[CheekDylibViewController alloc] init],
-        @"jailBreakCheekOpenJailFile": [[CheekDylibViewController alloc] init],
-        @"jailBreakCheekWritePrivatePath": [[CheekDylibViewController alloc] init],
-        @"jailBreakCheekLstatAtLnk": [[CheekDylibViewController alloc] init],
-        @"jailBreakCheekForkSub": [[CheekDylibViewController alloc] init],
-        @"jailBreakCheekExceptClass": [[CheekDylibViewController alloc] init],
-        @"jailBreakCheekCheekEnv": [[CheekDylibViewController alloc] init],
-        @"jailBreakCheekDebugged": [[CheekDylibViewController alloc] init],
+        @"jailBreakCheekOpenJailApp": [[CheekOpenJailAppViewController alloc] init],
+        @"jailBreakCheekOpenJailFile": [[CheekOpenJailFileViewController alloc] init],
+        @"jailBreakCheekWritePrivatePath": [[CheekWritePrivatePathViewController alloc] init],
+        @"jailBreakCheekLstatAtLnk": [[CheekLstatAtLnkViewController alloc] init],
+        @"jailBreakCheekForkSub": [[CheekForkSubViewController alloc] init],
+        @"jailBreakCheekExceptClass": [[CheekExceptClassViewController alloc] init],
+        @"jailBreakCheekCheekEnv": [[CheekCheekEnvViewController alloc] init],
+        @"jailBreakCheekDebugged": [[CheekDebuggedViewController alloc] init],
     };
     
     //pushViewController调用

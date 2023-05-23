@@ -20,12 +20,12 @@
 + (Boolean) isPhone{
     // 判断是否是真机
     
-    Boolean result = TRUE;
+    Boolean result = FALSE; // false：未被检测  true：被检测
     
     // TARGET_OS_IPHONE 真机
     // TARGET_IPHONE_SIMULATOR 模拟器
     if(TARGET_IPHONE_SIMULATOR){
-        result = FALSE;
+        result = TRUE;
     }
     
     return result;
@@ -102,9 +102,9 @@
     
     for(NSString* appName in appNames){
         NSString* appStr = [NSString stringWithFormat: @"cydia://package/%@", appName];
-        NSLog(@"越狱app>> %@", appStr);
         if ([[UIApplication sharedApplication] canOpenURL:[NSURL URLWithString: appStr]]){
             result = TRUE;
+            NSLog(@"越狱app>> %@", appStr);
         };
     };
     
@@ -236,6 +236,7 @@
     Boolean result = FALSE;
     
     int pid = fork();
+    NSLog(@"pid = %d", pid);
     if(!pid){
         exit(1);
     }

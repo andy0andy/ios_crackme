@@ -16,12 +16,20 @@
 		108652162A025C3A006C6B11 /* Md5ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 108652152A025C3A006C6B11 /* Md5ViewController.m */; };
 		108C8A002A04016B00CCC9EC /* UIButton+CrackTitle.m in Sources */ = {isa = PBXBuildFile; fileRef = 108C89FF2A04016B00CCC9EC /* UIButton+CrackTitle.m */; };
 		10A08AEE2A04F82600EFA5AD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10A08AED2A04F82600EFA5AD /* Assets.xcassets */; };
+		10AFEF932A1D034B00231F1B /* CheekOpenJailFileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 10AFEF922A1D034B00231F1B /* CheekOpenJailFileViewController.m */; };
+		10AFEF962A1D03A400231F1B /* CheekWritePrivatePathViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 10AFEF952A1D03A400231F1B /* CheekWritePrivatePathViewController.m */; };
+		10AFEF992A1D03F500231F1B /* CheekLstatAtLnkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 10AFEF982A1D03F500231F1B /* CheekLstatAtLnkViewController.m */; };
+		10AFEF9C2A1D056400231F1B /* CheekForkSubViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 10AFEF9B2A1D056400231F1B /* CheekForkSubViewController.m */; };
+		10AFEF9F2A1D05AA00231F1B /* CheekExceptClassViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 10AFEF9E2A1D05AA00231F1B /* CheekExceptClassViewController.m */; };
+		10AFEFA22A1D061A00231F1B /* CheekCheekEnvViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 10AFEFA12A1D061A00231F1B /* CheekCheekEnvViewController.m */; };
+		10AFEFA52A1D065F00231F1B /* CheekDebuggedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 10AFEFA42A1D065F00231F1B /* CheekDebuggedViewController.m */; };
 		10E30E962A077D6A00915BFC /* CrackArrayDefaults.m in Sources */ = {isa = PBXBuildFile; fileRef = 10E30E952A077D6A00915BFC /* CrackArrayDefaults.m */; };
 		10F7C7FD2A19CB1E0037E15E /* CheekStatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 10F7C7FC2A19CB1E0037E15E /* CheekStatViewController.m */; };
 		10F7C8022A19F0E60037E15E /* Tools.m in Sources */ = {isa = PBXBuildFile; fileRef = 10F7C8012A19F0E60037E15E /* Tools.m */; };
 		10F7C8052A19F8230037E15E /* JailBreakCheek.m in Sources */ = {isa = PBXBuildFile; fileRef = 10F7C8042A19F8230037E15E /* JailBreakCheek.m */; };
 		10F7C8082A1A01D60037E15E /* CheekIphoneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 10F7C8072A1A01D60037E15E /* CheekIphoneViewController.m */; };
 		10F7C80B2A1A0EAD0037E15E /* CheekDylibViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 10F7C80A2A1A0EAD0037E15E /* CheekDylibViewController.m */; };
+		10F7C8132A1CFFB40037E15E /* CheekOpenJailAppViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 10F7C8122A1CFFB40037E15E /* CheekOpenJailAppViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +48,20 @@
 		108652152A025C3A006C6B11 /* Md5ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Md5ViewController.m; sourceTree = "<group>"; };
 		108C89FF2A04016B00CCC9EC /* UIButton+CrackTitle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+CrackTitle.m"; sourceTree = "<group>"; };
 		10A08AED2A04F82600EFA5AD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		10AFEF912A1D034200231F1B /* CheekOpenJailFileViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CheekOpenJailFileViewController.h; sourceTree = "<group>"; };
+		10AFEF922A1D034B00231F1B /* CheekOpenJailFileViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CheekOpenJailFileViewController.m; sourceTree = "<group>"; };
+		10AFEF942A1D039600231F1B /* CheekWritePrivatePathViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CheekWritePrivatePathViewController.h; sourceTree = "<group>"; };
+		10AFEF952A1D03A400231F1B /* CheekWritePrivatePathViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CheekWritePrivatePathViewController.m; sourceTree = "<group>"; };
+		10AFEF972A1D03E900231F1B /* CheekLstatAtLnkViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CheekLstatAtLnkViewController.h; sourceTree = "<group>"; };
+		10AFEF982A1D03F500231F1B /* CheekLstatAtLnkViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CheekLstatAtLnkViewController.m; sourceTree = "<group>"; };
+		10AFEF9A2A1D054600231F1B /* CheekForkSubViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CheekForkSubViewController.h; sourceTree = "<group>"; };
+		10AFEF9B2A1D056400231F1B /* CheekForkSubViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CheekForkSubViewController.m; sourceTree = "<group>"; };
+		10AFEF9D2A1D058D00231F1B /* CheekExceptClassViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CheekExceptClassViewController.h; sourceTree = "<group>"; };
+		10AFEF9E2A1D05AA00231F1B /* CheekExceptClassViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CheekExceptClassViewController.m; sourceTree = "<group>"; };
+		10AFEFA02A1D05FD00231F1B /* CheekCheekEnvViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CheekCheekEnvViewController.h; sourceTree = "<group>"; };
+		10AFEFA12A1D061A00231F1B /* CheekCheekEnvViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CheekCheekEnvViewController.m; sourceTree = "<group>"; };
+		10AFEFA32A1D064300231F1B /* CheekDebuggedViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CheekDebuggedViewController.h; sourceTree = "<group>"; };
+		10AFEFA42A1D065F00231F1B /* CheekDebuggedViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CheekDebuggedViewController.m; sourceTree = "<group>"; };
 		10E30E942A077D2500915BFC /* CrackArrayDefaults.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CrackArrayDefaults.h; sourceTree = "<group>"; };
 		10E30E952A077D6A00915BFC /* CrackArrayDefaults.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CrackArrayDefaults.m; sourceTree = "<group>"; };
 		10F7C7FB2A19CB070037E15E /* CheekStatViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CheekStatViewController.h; sourceTree = "<group>"; };
@@ -52,6 +74,8 @@
 		10F7C8072A1A01D60037E15E /* CheekIphoneViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CheekIphoneViewController.m; sourceTree = "<group>"; };
 		10F7C8092A1A0EA00037E15E /* CheekDylibViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CheekDylibViewController.h; sourceTree = "<group>"; };
 		10F7C80A2A1A0EAD0037E15E /* CheekDylibViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CheekDylibViewController.m; sourceTree = "<group>"; };
+		10F7C8112A1CFF0F0037E15E /* CheekOpenJailAppViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CheekOpenJailAppViewController.h; sourceTree = "<group>"; };
+		10F7C8122A1CFFB40037E15E /* CheekOpenJailAppViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CheekOpenJailAppViewController.m; sourceTree = "<group>"; };
 		10FC66D22A03C00900CF0DED /* UIButton+CrackTitle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIButton+CrackTitle.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -128,6 +152,22 @@
 				10F7C8072A1A01D60037E15E /* CheekIphoneViewController.m */,
 				10F7C8092A1A0EA00037E15E /* CheekDylibViewController.h */,
 				10F7C80A2A1A0EAD0037E15E /* CheekDylibViewController.m */,
+				10F7C8112A1CFF0F0037E15E /* CheekOpenJailAppViewController.h */,
+				10F7C8122A1CFFB40037E15E /* CheekOpenJailAppViewController.m */,
+				10AFEF912A1D034200231F1B /* CheekOpenJailFileViewController.h */,
+				10AFEF922A1D034B00231F1B /* CheekOpenJailFileViewController.m */,
+				10AFEF942A1D039600231F1B /* CheekWritePrivatePathViewController.h */,
+				10AFEF952A1D03A400231F1B /* CheekWritePrivatePathViewController.m */,
+				10AFEF972A1D03E900231F1B /* CheekLstatAtLnkViewController.h */,
+				10AFEF982A1D03F500231F1B /* CheekLstatAtLnkViewController.m */,
+				10AFEF9A2A1D054600231F1B /* CheekForkSubViewController.h */,
+				10AFEF9B2A1D056400231F1B /* CheekForkSubViewController.m */,
+				10AFEF9D2A1D058D00231F1B /* CheekExceptClassViewController.h */,
+				10AFEF9E2A1D05AA00231F1B /* CheekExceptClassViewController.m */,
+				10AFEFA02A1D05FD00231F1B /* CheekCheekEnvViewController.h */,
+				10AFEFA12A1D061A00231F1B /* CheekCheekEnvViewController.m */,
+				10AFEFA32A1D064300231F1B /* CheekDebuggedViewController.h */,
+				10AFEFA42A1D065F00231F1B /* CheekDebuggedViewController.m */,
 			);
 			name = JailBreakCheek;
 			sourceTree = "<group>";
@@ -205,15 +245,23 @@
 				10F7C80B2A1A0EAD0037E15E /* CheekDylibViewController.m in Sources */,
 				108652032A024CE4006C6B11 /* ViewController.m in Sources */,
 				108651FD2A024CE4006C6B11 /* AppDelegate.m in Sources */,
+				10AFEF962A1D03A400231F1B /* CheekWritePrivatePathViewController.m in Sources */,
 				10F7C7FD2A19CB1E0037E15E /* CheekStatViewController.m in Sources */,
 				10F7C8022A19F0E60037E15E /* Tools.m in Sources */,
+				10AFEF9F2A1D05AA00231F1B /* CheekExceptClassViewController.m in Sources */,
+				10AFEF9C2A1D056400231F1B /* CheekForkSubViewController.m in Sources */,
 				10F7C8052A19F8230037E15E /* JailBreakCheek.m in Sources */,
+				10F7C8132A1CFFB40037E15E /* CheekOpenJailAppViewController.m in Sources */,
+				10AFEFA52A1D065F00231F1B /* CheekDebuggedViewController.m in Sources */,
 				1086520E2A024CE4006C6B11 /* main.m in Sources */,
+				10AFEFA22A1D061A00231F1B /* CheekCheekEnvViewController.m in Sources */,
 				10E30E962A077D6A00915BFC /* CrackArrayDefaults.m in Sources */,
 				108652162A025C3A006C6B11 /* Md5ViewController.m in Sources */,
+				10AFEF992A1D03F500231F1B /* CheekLstatAtLnkViewController.m in Sources */,
 				10F7C8082A1A01D60037E15E /* CheekIphoneViewController.m in Sources */,
 				108652002A024CE4006C6B11 /* SceneDelegate.m in Sources */,
 				108C8A002A04016B00CCC9EC /* UIButton+CrackTitle.m in Sources */,
+				10AFEF932A1D034B00231F1B /* CheekOpenJailFileViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
