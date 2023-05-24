@@ -18,7 +18,6 @@
 #import "A0Classes/CheekStatViewController.h"
 #import "A0Classes/CheekIphoneViewController.h"
 #import "A0Classes/CheekDylibViewController.h"
-
 #import "A0Classes/CheekOpenJailAppViewController.h"
 #import "A0Classes/CheekOpenJailFileViewController.h"
 #import "A0Classes/CheekWritePrivatePathViewController.h"
@@ -39,20 +38,7 @@
 - (void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
     // view will happen
-    
     self.view.backgroundColor = [UIColor whiteColor];
-    
-    // 创建UIScrollView
-    _scrollView = [[UIScrollView alloc] init];
-    _scrollView.frame = CGRectMake(0, 0, SCREENWIDTH, SCREENHEIGHT);
-    // 设置画布大小，一般比frame大
-    _scrollView.contentSize = CGSizeMake(SCREENWIDTH, SCREENHEIGHT*2);
-    // 设置内边距 ? 回退导致滚动时图扩大
-    _scrollView.contentInset = UIEdgeInsetsMake(0, 0, 65, 0);
-    
-    _scrollView.bounces = NO;
-    
-    [self.view addSubview:_scrollView];
     
     // 颜色
     UIColor *passColor= [UIColor colorWithRed:144/255.0 green:238/255.0 blue:144/255.0 alpha:1];
@@ -60,6 +46,18 @@
     
     // crack 数组，遍历展示
     NSMutableArray* crackArr = [[CrackArrayDefaults alloc] crackArray];
+    
+    // 创建UIScrollView
+    _scrollView = [[UIScrollView alloc] init];
+    _scrollView.frame = CGRectMake(0, 0, SCREENWIDTH, SCREENHEIGHT);
+    // 设置画布大小，一般比frame大
+    _scrollView.contentSize = CGSizeMake(SCREENWIDTH, 80*crackArr.count);
+    // 设置内边距 ? 回退导致滚动时图扩大
+    _scrollView.contentInset = UIEdgeInsetsMake(0, 0, 0, 0);
+    
+    _scrollView.bounces = NO;
+    
+    [self.view addSubview:_scrollView];
     
     for (NSInteger i=0; i < crackArr.count; i++){
         NSDictionary* arrDict = crackArr[i];
@@ -101,7 +99,6 @@
         @"jailBreakCheekStat": [[CheekStatViewController alloc] init],
         @"jailBreakCheekIphone": [[CheekIphoneViewController alloc] init],
         @"jailBreakCheekDylib": [[CheekDylibViewController alloc] init],
-        
         @"jailBreakCheekOpenJailApp": [[CheekOpenJailAppViewController alloc] init],
         @"jailBreakCheekOpenJailFile": [[CheekOpenJailFileViewController alloc] init],
         @"jailBreakCheekWritePrivatePath": [[CheekWritePrivatePathViewController alloc] init],

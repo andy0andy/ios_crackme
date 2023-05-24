@@ -16,13 +16,13 @@
     
     if (result){
         
-        UIAlertController* alert = [UIAlertController alertControllerWithTitle:@"通知" message:@"检测正确^.^" preferredStyle:UIAlertControllerStyleAlert];
+        UIAlertController* alert = [UIAlertController alertControllerWithTitle:@"通知" message:@"通过检测^.^" preferredStyle:UIAlertControllerStyleAlert];
         UIAlertAction* defaultAction = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:^(UIAlertAction* action){}];
         
         [alert addAction:defaultAction];
         [view presentViewController:alert animated:YES completion:nil];
     }else{
-        UIAlertController* alert = [UIAlertController alertControllerWithTitle:@"通知" message:@"检测失败T.T" preferredStyle:UIAlertControllerStyleAlert];
+        UIAlertController* alert = [UIAlertController alertControllerWithTitle:@"通知" message:@"未通过检测T.T" preferredStyle:UIAlertControllerStyleAlert];
         UIAlertAction* defaultAction = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:^(UIAlertAction* action){}];
         
         [alert addAction:defaultAction];
