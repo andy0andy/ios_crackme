@@ -77,12 +77,17 @@
     for(int i=0;i<_dyld_image_count();i++){
         const char* name = _dyld_get_image_name(i);
         NSString* dylib_path = [NSString stringWithFormat:@"%s", name];
-        NSLog(@"已加载dylib>> %s", name);
+        NSLog(@"(%d) 已加载dylib>> %s", i, name);
         
         for(NSString* illegalDylib in illegalDylibs){
             if ([dylib_path isEqual:illegalDylib]){
                 result = TRUE;
+                break;
             }
+        }
+        
+        if (result){
+            break;
         }
     }
     
@@ -102,9 +107,10 @@
     
     for(NSString* appName in appNames){
         NSString* appStr = [NSString stringWithFormat: @"cydia://package/%@", appName];
-        if ([[UIApplication sharedApplication] canOpenURL:[NSURL URLWithString: appStr]]){
+        NSLog(@"app>> %@", appStr);
+        
+        if ([[UIApplication sharedApplication] canOpenURL:[NSURL URLWithString:appStr]]){
             result = TRUE;
-            NSLog(@"越狱app>> %@", appStr);
         };
     };
     
@@ -192,6 +198,8 @@
         if(error==nil)
         {
             result = TRUE;
+        }else{
+            NSLog(@"write fail: %@", path);
         }
 
     } @catch (NSException *exception) {}
@@ -220,10 +228,14 @@
         memcpy(jbPathChar, [jbPath cStringUsingEncoding:NSUTF8StringEncoding], jbPath.length);
         
         if (lstat(jbPathChar, &stat_info)){
+            NSLog(@"stat_info.st_mode: %hu, S_IFLNK: %d, %d", stat_info.st_mode, S_IFLNK, stat_info.st_mode & S_IFLNK);
             if(stat_info.st_mode & S_IFLNK){
                 result = TRUE;
                 NSLog(@"是路径链接>> %@", jbPath);
             }
+        }else{
+            NSLog(@"路径不存在>> %@", jbPath);
+            result = TRUE;
         }
     }
     
@@ -269,10 +281,8 @@
     // 查看是否有环境变量
     Boolean result = FALSE;
     
-    NSString* str = @"DYLD_INSERT_LIBRARIES";
-    char strChar[str.length];
-    memcpy(strChar, [str cStringUsingEncoding:NSUTF8StringEncoding], str.length);
-    result = !(NULL == getenv(strChar));
+    char* strchar = @"DYLD_INSERT_LIBRARIES";
+    result = !(NULL == getenv(strchar));
     
     return result;
 }
